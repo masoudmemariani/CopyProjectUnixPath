@@ -39,9 +39,6 @@
       <Group guid="guidCopyProjectUnixPathPackageCmdSet" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
       </Group>
-      <Group guid="guidCopyProjectUnixPathPackageCmdSet1" id="MyMenuGroup" priority="0x0600">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
-      </Group>
     </Groups>
 
     <!--Buttons section. -->
@@ -57,16 +54,9 @@
           If you do not want an image next to your command, remove the Icon node /> -->
       <Button guid="guidCopyProjectUnixPathPackageCmdSet" id="Command1Id" priority="0x0100" type="Button">
         <Parent guid="guidCopyProjectUnixPathPackageCmdSet" id="MyMenuGroup" />
-        <Icon guid="guidImages" id="bmpPic1" />
+        <Icon guid="guidImages" id="bmpPicStrikethrough" />
         <Strings>
           <ButtonText>Copy Folder Path (Unix style)</ButtonText>
-        </Strings>
-      </Button>
-      <Button guid="guidCopyProjectUnixPathPackageCmdSet1" id="cmdidCommand1" priority="0x0100" type="Button">
-        <Parent guid="guidCopyProjectUnixPathPackageCmdSet1" id="MyMenuGroup" />
-        <Icon guid="guidImages1" id="bmpPic1" />
-        <Strings>
-          <ButtonText>Invoke Command1</ButtonText>
         </Strings>
       </Button>
     </Buttons>
@@ -79,7 +69,7 @@
             inside a button definition. An important aspect of this declaration is that the element id
             must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
       <Bitmap guid="guidImages" href="Resources\Command1.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
-      <Bitmap guid="guidImages1" href="Resources\Command1.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <!--<Bitmap guid="guidImages" href="Resources\Command1.png"  />-->
     </Bitmaps>
   </Commands>
 
@@ -94,20 +84,6 @@
     </GuidSymbol>
 
     <GuidSymbol name="guidImages" value="{f044b493-0154-4321-931b-c22a2c93ebcf}">
-      <IDSymbol name="bmpPic1" value="1" />
-      <IDSymbol name="bmpPic2" value="2" />
-      <IDSymbol name="bmpPicSearch" value="3" />
-      <IDSymbol name="bmpPicX" value="4" />
-      <IDSymbol name="bmpPicArrows" value="5" />
-      <IDSymbol name="bmpPicStrikethrough" value="6" />
-    </GuidSymbol>
-  
-    <GuidSymbol value="{e3add7e4-d295-4549-b41c-4a80391b7c1f}" name="guidCopyProjectUnixPathPackageCmdSet1">
-      <IDSymbol value="4128" name="MyMenuGroup" />
-      <IDSymbol value="256" name="cmdidCommand1" />
-    </GuidSymbol>
-  
-    <GuidSymbol value="{82094010-7c9b-49ae-a0be-30a663343d48}" name="guidImages1">
       <IDSymbol name="bmpPic1" value="1" />
       <IDSymbol name="bmpPic2" value="2" />
       <IDSymbol name="bmpPicSearch" value="3" />
