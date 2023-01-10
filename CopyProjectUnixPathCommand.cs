@@ -92,32 +92,9 @@ namespace CopyProjectUnixPath
         ///
         /// 
 
-        private void Execute2(object sender, EventArgs e)
-        {
-            ThreadHelper.ThrowIfNotOnUIThread();
-
-            var _dte = ServiceProvider.GetServiceAsync(typeof(EnvDTE.DTE)).Result as EnvDTE.DTE;
-
-            Array _projects = _dte.ActiveSolutionProjects as Array;
-            if (_projects.Length != 0 && _projects != null)
-            {
-                Project _selectedProject = _projects.GetValue(0) as Project;
-                //get the project path
-                string _directoryPath = new FileInfo(_selectedProject.FullName).DirectoryName;
-
-                Clipboard.SetText(ReplaceBackslashesWithSlashes(_directoryPath));
-            }
-            else
-            {
-                Console.WriteLine("No Project in solution or selected");
-            }
-        }
-
         private void Execute(object sender, EventArgs e)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
-            string message = string.Format(CultureInfo.CurrentCulture, "Inside {0}.MenuItemCallback()", this.GetType().FullName);
-            string title = "ItemContextCommand";
 
             IntPtr hierarchyPointer, selectionContainerPointer;
             Object selectedObject = null;
