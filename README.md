@@ -12,5 +12,9 @@ But it's an extra step and why not using fewer clicks and keystrokes? By using t
 
 ![plot](./Resources/contextmenu.png)
 
+The core logic of this extension is a slight modification of the answer provided in [this Stackoverflow post](https://stackoverflow.com/a/45180002/2528681). Thanks and lots of credits to the writer of the aforementioned post.
+
+
+
 
 
