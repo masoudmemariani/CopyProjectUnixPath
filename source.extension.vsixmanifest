@@ -8,7 +8,7 @@
         <License>LICENSE.txt</License>
         <Icon>Resources\icon.png</Icon>
         <PreviewImage>icon.png</PreviewImage>
-        <Tags>visualstudio extension copy path forwardslash backslash unix linux bash</Tags>
+        <Tags>visualstudio-extension copy path forwardslash backslash unix linux bash</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
